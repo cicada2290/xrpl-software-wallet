@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ウォレット</title>
+  <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h2>XRPL WALLET MOCK</h2>
+  </div>
+
+  <!-- Body -->
+  <div id="mainPage" class="content">
+    <div style="padding-bottom: 20px;">
+      <p class="text-subtitle">Network</p>
+      <select id="networkSelect" style="width: 112px;">
+        <option value="TESTNET">Testnet</option>
+        <option value="DEVNET">Devnet</option>
+        <option value="AMM_DEVNET">AMM-Devnet</option>
+      </select>
+    </div>
+    <div style="padding-bottom: 8px;">
+      <p class="text-subtitle">My address</p>
+      <p id="walletAddressDisplay" class="text-body1"></p>
+      <p id="walletSeedDisplay" class="text-body1" style="display: none; color: red;"></p>
+      <p id="countdownTimer" class="text-body1" style="color: red;"></p>
+    </div>
+    <div>
+      <p class="text-subtitle">Balance</p>
+      <p id="walletAddressDisplay" class="text-body1">
+        <span id="nativeTokenBalanceDisplay">0</span>
+        <span>XRP</span>
+      </p>
+    </div>
+  </div>
+
+  <div id="importPage" class="content hidden">
+    <p class="text-body1">Enter the seed and press the import button.</p>
+    <input type="text" id="seedPhraseInput" placeholder="Enter Seed Phrase" />
+    <button id="importWalletButton">Import</button>
+    <p id="errorMessage" class="error-message hidden"></p>
+    <p id="loadingIndicator" class="loading hidden">Loading...</p>
+  </div>
+
+  <!-- Footer -->
+  <div id="mainPageFooter" class="footer">
+    <button id="createWalletButton" style="margin-right: 4px;">Create wallet</button>
+    <button id="goToImportPageButton">Import wallet</button>
+    <button id="showSeedButton" class="hidden" style="margin-right: 4px;">Show seed</button>
+    <button id="deleteWalletButton" class="hidden">Delete wallet</button>
+  </div>
+
+  <div id="importPageFooter" class="footer hidden">
+    <button id="goToMainPageButton">Back</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/xrpl.js"></script>
+  <script src="../js/popup.js"></script>
+</body>
+</html>

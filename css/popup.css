@@ -1,0 +1,42 @@
+body {
+  width: 300px;
+  padding-bottom: 24px;
+  background-color: black;
+  color: white;
+}
+
+.text-subtitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-body1 {
+  font-size: 12px;
+}
+
+.header {
+  padding: 4px 0;
+  text-align: center;
+}
+
+.content {
+  padding: 0 16px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 32px;
+  padding: 0 16px 16px 16px;
+}
+
+.loading {
+  display: none; /* 初期状態では非表示 */
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: red;
+}

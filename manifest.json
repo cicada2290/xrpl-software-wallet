@@ -1,0 +1,10 @@
+{
+  "name": "XRPL Wallet Mock",
+  "description": "XRPL Wallet Mock",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "html/popup.html"
+  }
+}
